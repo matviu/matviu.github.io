@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <script src="js/javascript.js" defer></script>
+
+  <title>matviu - Главная</title>
+</head>
+<body class="body-about container-fluid">
+
+  <nav class="main-nav main-nav_closed">
+    <div class="main-nav__avatar-container">
+      <img src="img/avatar.png" alt="avatar" class="main-nav__avatar">
+    </div>
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item_current">
+        <a href="#" class="main-nav__item-link">Обо мне</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__item-link">Работы</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__item-link">Лабораторные работы</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__item-link">Контакты</a>
+      </li>
+    </ul>
+
+    <section class="contact-links">
+      <a href="https://github.com/matviu" class="contact-links__link link-gh">
+        <picture>
+          <source media="(min-width: 1024px)" secset="img/gh/GitHub-Mark-Light-120px-plus.png">
+          <source media="(min-width: 768px)" secset="img\gh\GitHub-Mark-Light-64px.png">
+          <img src="img\gh\GitHub-Mark-Light-32px.png" alt="github" title="мой github" class="link-gh__logo">
+        </picture>
+      </a>
+    </section>
+
+    <button class="main-nav__toggle" type="button"></button>
+  </nav>
+
+  <main class="main about">
+    <h1 class="main__title">Обо мне</h1>
+    <span class="about__name">Александр Матвиенко<bdi>.</bdi></span>
+    <span class="about__profession">Начинающий frontend разработчик</span>
+    <ul class="about__list">
+      <span class="about__list-title">Навыки:</span>
+      <li class="about__item about__item_closed">
+        <span>HTML</span>
+        <div>HTML5, семантически верная структура страницы, именование классов на основе методологии БЭМ, валидация, адаптивная графика</div>
+      </li>
+      <li class="about__item about__item_closed">
+        <span>CSS</span>
+        <div>CSS3, flex-box, адаптивная "резиновая" верстка, mobile first, препроцессор LESS</div>
+      </li>
+      <li class="about__item about__item_closed">
+        <span>JavaScript</span>
+        <div>На данном этапе выполняю задачи только на нативном js, без дополнительных библиотек и плагинов. Уровень знаний позволяет писать всю логику, связанную с приданием интерактивности элементам верстки</div>
+      </li>
+      <li class="about__item about__item_closed">
+        <span>Дополнительно</span>
+        <div>автоматизация работы - Gulp, система контроля вкрсий - <a href="https://github.com/matviu">GitHub</a>.</div>
+      </li>
+    </ul>
+    </div>
+    <div class="about__wrapper-btn">
+      <a href="works.html" class="about__more-btn btn">Узнать больше</a>
+    </div>
+
+    <section class="previous-clients">
+      <h2 class="previous-clients__title">Также я работал с:</h2>
+      <ul class="previous-clients__list">
+        <li class="previous-clients__item">
+          <a href="#" class="previous-clients__link"></a>
+        </li>
+      </ul>
+    </section>
+
+    <blockquote class="about__quote">
+      Исполнительность человека славит.
+    </blockquote>
+
+  </main>
+
+</body>
+</html>
