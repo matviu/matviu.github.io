@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matviu/matviu.github.io.git"
+    "url": "git+https://github.com/matviu/portfolio.git"
   },
   "keywords": [
     "html",
@@ -21,9 +21,9 @@
   "author": "Alexander Matvienko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matviu/matviu.github.io/issues"
+    "url": "https://github.com/matviu/portfolio/issues"
   },
-  "homepage": "https://github.com/matviu/matviu.github.io#readme",
+  "homepage": "https://github.com/matviu/portfolio#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
