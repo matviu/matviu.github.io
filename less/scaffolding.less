@@ -66,15 +66,14 @@ body {
 
 .container-fluid {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
-
-  outline: 1px green dashed;
 }
 
 .main {
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   display: flex;
   flex-direction: column;
@@ -86,6 +85,7 @@ body {
 .main__title {
   position: relative;
   font-weight: 100;
+  font-size: 2rem;
 
   &::after {
     content: "";
@@ -115,18 +115,39 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
 
+.quote {
+  margin: 0;
+  padding: 40px 40px 20px 50px;
 
+  background-image: url("../img/quotes.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 0% 35%;
+
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 100;
 }
 
 @media @tablet-width {
 
+  html {
+    font-size: 18px;
+  }
+
   body {
+    height: 100vh;
     flex-direction: row;
   }
 }
 
 @media @desktop-width {
+
+  html {
+    font-size: 20px;
+  }
 
   .container-fluid {
     max-width: 1024px;
