@@ -1,3 +1,5 @@
+var body = document.querySelector('body');
+
 /*--main-nav open-close--*/
 (function(){
 
@@ -18,25 +20,55 @@
 /*--about__item open-close--*/
 (function(){
 
-  var list = document.querySelector('.about__list');
+  if (body.classList.contains('body-about')) {
 
-  list.onclick = function(event) {
-    var target = event.target;
+    var list = document.querySelector('.about__list');
 
-    if (target.tagName != "SPAN") return;
+    list.onclick = function(event) {
+      var target = event.target;
 
-    var parent = target.parentNode;
+      if (target.tagName != "SPAN") return;
 
-    if (parent.classList.contains("about__item_closed")) {
-      parent.classList.remove("about__item_closed");
-      parent.classList.add("about__item_opened");
-    } else {
-      parent.classList.add("about__item_closed");
-      parent.classList.remove("about__item_opened");
-    }
+      var parent = target.parentNode;
 
+      if (parent.classList.contains("about__item_closed")) {
+        parent.classList.remove("about__item_closed");
+        parent.classList.add("about__item_opened");
+      } else {
+        parent.classList.add("about__item_closed");
+        parent.classList.remove("about__item_opened");
+      }
 
-  };
+    };
 
+  }
+
+})();
+
+/*--contacts__item open-close--*/
+(function(){
+
+  if (body.classList.contains('body-contacts')) {
+
+    var list = document.querySelector('.contacts__list');
+
+    list.onclick = function(event) {
+      var target = event.target;
+
+      if (target.tagName != "SPAN") return;
+
+      var parent = target.parentNode;
+
+      if (parent.classList.contains("contacts__item_closed")) {
+        parent.classList.remove("contacts__item_closed");
+        parent.classList.add("contacts__item_opened");
+      } else {
+        parent.classList.add("contacts__item_closed");
+        parent.classList.remove("contacts__item_opened");
+      }
+
+    };
+
+  }
 
 })();
