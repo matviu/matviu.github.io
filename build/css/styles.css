@@ -340,6 +340,16 @@ body.body-contacts {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
+.viber {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/viber.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+}
 @media (min-width: 768px) {
   html {
     font-size: 18px;
